@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slyles.css">
+    <title> Портфолио</title>
+</head>
+
+<body>
+    <header>
+        <h1>Проекты</h1>
+      
+
+
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="projects.html">Проекты</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contact.html">Контакты</a>
+     
+    </nav>
+    
+
+    <section id="projects">
+      
+                <div class="project">
+                    <div class="carousel">
+                        <div class="slide_active" onclick="openOverlay('1.png')">
+                            <img src="1.png" alt="Фотография 1">
+                        </div>
+                        <div class="slide" onclick="openOverlay('2.png')">
+                            <img src="2.png" alt="Фотография 2">
+                        </div>
+                        <div class="slide" onclick="openOverlay('3.png')">
+                            <img src="3.png" alt="Фотография 3">
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Прототип сайта с тремя страницами, содержание формы регистрации и обратной связи</h3>
+                        <p>Основные инструменты работы c UI/UX аналитикой</p>
+                        <a href="#" class="view-project-button" onclick="openFigma('https://www.figma.com/file/pOTRoLEe6xi3eivQGumZwm/Untitled?type=design&node-id=0%3A1&mode=design&t=cIrW35bSKqHEXRsU-1')">Посмотреть проект</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="carousel">
+                        <div class="slide_active" onclick="openOverlay('4.png')">
+                            <img src="4.png" alt="Фотография 4">
+                        </div>
+                        <div class="slide" onclick="openOverlay('5.png')">
+                            <img src="5.png" alt="Фотография 5">
+                        </div>
+                        <div class="slide" onclick="openOverlay('6.png')">
+                            <img src="6.png" alt="Фотография 6">
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Создание проекта используя дизайн Figma в качестве макета.</h3>
+                        <p>Верстка сайтов (HTML5+CSS3)</p>
+                        <a href="#" class="view-project-button" onclick="openFigma('https://www.figma.com/file/29pRfrzildwmgqr3Xm7mFs/Simple-Starter-Template-v0.1-(Community)?type=design&mode=design')">Посмотреть проект</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="carousel">
+                        <div class="slide_active" onclick="openOverlay('7.png')">
+                            <img src="7.png" alt="Фотография 7">
+                        </div>
+                        <div class="slide" onclick="openOverlay('8.png')">
+                            <img src="8.png" alt="Фотография 8">
+                        </div>
+                        <div class="slide" onclick="openOverlay('9.png')">
+                            <img src="9.png" alt="Фотография 9">
+                        </div>
+                        <div class="slide active" onclick="openOverlay('10.png')">
+                            <img src="10.png" alt="Фотография 10">
+                        </div>
+                        <div class="slide" onclick="openOverlay('11.png')">
+                            <img src="11.png" alt="Фотография 11">
+                        </div>
+                        <div class="slide" onclick="openOverlay('12.png')">
+                            <img src="12.png" alt="Фотография 12">
+                        </div>
+                        <div class="slide" onclick="openOverlay('13.png')">
+                            <img src="13.png" alt="Фотография 13">
+                        </div>
+                        <div class="slide" onclick="openOverlay('14.png')">
+                            <img src="14.png" alt="Фотография 14">
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Многостраничный сайт в Wordpress.</h3>
+                        <p>Разработка сайтов на основе CMS</p>
+                        <a href="#" class="view-project-button" onclick="openFigma('https://kgurenko.ru/')">Посмотреть проект</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="carousel">
+                        <div class="slide_active" onclick="openOverlay('15.png')">
+                            <img src="15.png" alt="Фотография 15">
+                        </div>
+                        <div class="slide" onclick="openOverlay('16.png')">
+                            <img src="16.png" alt="Фотография 16">
+                        </div>
+                        <div class="slide" onclick="openOverlay('17.png')">
+                            <img src="17.png" alt="Фотография 17">
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Калькулятор с использованием HTML, CSS и JavaScript</h3>
+                        <p>Программирование на языке JavaScript</p>
+                        <a href="#" class="view-project-button" onclick="openGithub('https://github.com/gurenko30/calculator.git')">Посмотреть проект</a>
+                    </div>
+                </div>
+    </section>
+    <div class="overlay" id="overlay" onclick="closeOverlay()">
+        <img src="" alt="Увеличенное изображение" id="overlay-image">
+    </div>
+    <footer>
+
+
+        &copy; Гуренко Кристина 2023 | Социальная сеть: <a href="https://vk.com/gurenko_kristina">VK</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slyles.css">
+    <title> Галерея</title>
+</head>
+
+<body>
+    <header>
+        <h1>Интерактивная Страница</h1>
+
+
+
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="projects.html">Проекты</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contact.html">Контакты</a>
+   
+    </nav>
+
+   
+        <div clacc="interactive">
+            <h2>Интерактивные изображение</h2>
+        </div>
+        <section id="gallery" id="interactive-section">
+        <img class="interactive-image" src="1.png" alt="Изображение 1" id="interactiveImage">
+     
+    </section>
+
+   
+ 
+    <footer>
+
+
+        &copy; Гуренко Кристина 2023 | Социальная сеть: <a href="https://vk.com/gurenko_kristina">VK</a>
+    </footer>
+    <script>
+        // Ваши скрипты здесь
+
+        // Получаем элемент галереи
+        var gallery = document.getElementById('gallery');
+
+        // Перемещение к следующей/предыдущей картинке при прокрутке колеса мыши
+        gallery.addEventListener('wheel', function (event) {
+            event.preventDefault();
+
+            gallery.scrollLeft += event.deltaY;
+        });
+        // Ваши скрипты здесь
+
+        // Получаем элементы
+        var interactiveImage = document.getElementById('interactiveImage');
+
+        // Массив с путями к изображениям
+        var imagePaths = ['1.png', '2.png', '3.png','4.png', '5.png', '6.png','7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png','15.png', '16.png', '17.png']
+        // Ваши скрипты здесь]
+     
+        // Ваши скрипты здесь
+
+        // Получаем элементы
+        var interactiveImage = document.getElementById('interactiveImage');
+
+        // Массив с путями к изображениям
+        var imagePaths = ['1.png', '2.png', '3.png','4.png', '5.png', '6.png','7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png','15.png', '16.png', '17.png']
+        // Индекс текущего изображения
+        var currentIndex = 0;
+
+        // Функция для смены изображения
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % imagePaths.length;
+            interactiveImage.src = imagePaths[currentIndex];
+        }
+
+        // Устанавливаем автоматическую анимацию (смену изображений) через каждые 3 секунды
+        setInterval(changeImage, 3000);
+    </script>
+</body>
+
+</html>
